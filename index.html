@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Croissant+One&family=Dancing+Script&family=Fuggles&family=Montserrat+Alternates:wght@100&family=Playfair+Display:ital@0;1&family=Sacramento&family=Sedgwick+Ave+Display&family=Tourney:wght@100&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="position-relative page-header ">
+       <img class="img-fluid w-100" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1437ff20-d6ae-4924-a1d9-6912e46127d6/dekomfx-2aaf4460-27bd-4d6b-879d-747a95f05ee7.png/v1/fill/w_1280,h_828,q_80,strp/watching_beautiful_nature_by_marcenas123_dekomfx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODI4IiwicGF0aCI6IlwvZlwvMTQzN2ZmMjAtZDZhZS00OTI0LWExZDktNjkxMmU0NjEyN2Q2XC9kZWtvbWZ4LTJhYWY0NDYwLTI3YmQtNGQ2Yi04NzlkLTc0N2E5NWYwNWVlNy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.W53MWjv14N5nuZoDewYZ4TIx-IOH-fOjFXkqFugcIDE" alt=""> 
+
+       <h1 class="position-absolute  text-light nav-dis">TRAVEL  <span class="nav-dis1 ">for enough</span> You meet <span class="nav-dis1"> yourself</span></h1>
+
+       <!-- navigation -->
+      <nav class="navbar navbar-expand-lg  position-absolute top-0 w-100 ">
+        <div class="container-fluid">
+          <a class="navbar-brand  text-warning fs-1 " href="#">Travel <span class="text-dark fs-6 ">Guide</span></a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon me-auto"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Packages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Family/Friends</a></li>
+                  <li><a class="dropdown-item" href="#">Single</a></li>
+                  <li><a class="dropdown-item" href="#">Couple</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#plan">Plans</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-light" href="#respond">Reponds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- enquiry button -->
+
+      
+
+      <button type="button" class="btn btn-success position-absolute enq" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        ENQUIRY
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">PLEASE SHARE YOUR DETAILS</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <input type="text" class="form-control" placeholder="Name">
+                <input type="email" class="form-control" placeholder="Email">
+                <input type="tel" class="form-control" placeholder="Phone Number">
+                <select class="form-select text-secondary" aria-label="Default select example">
+                  <option selected>your preference</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input type="number" class="form-control" placeholder="Number of members">
+                <textarea class="form-control" rows="10" placeholder="Messages"></textarea>
+
+
+              </form>
+              <button type="submit" class="btn " data-bs-dismiss="modal">Submit</button>
+
+
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+   
+
+    <!-- section-1 -->
+
+    <section class="position-relative bg-secondary bg-opacity-10 me-3 section-1" id="home" >
+      <h1 class="display-3-sm text-center mt-4">START YOUR JOURNEY <br> <span>with us</span></h1>
+      <div class="card ms-md-5 c-ard1" style="width: 15rem;" >
+        <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2d1fffe1fcbc546994590d55/photo1525968561557b3d3c823fee2.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+          <h5>01</h5>
+          <h5 class="card-title">The Algarve, Portugal</h5>
+          <p class="card-text">While there is no denying that winter sea swimming is reserved for the fearless, there is still some good surf and sun-kissed days to be had. With over 300 sunny days a year and heavily discounted prices outside summer, the off-season in the Algarve is a good gamble to get your winter Vitamin C.</p>
+         
+          <a href="#" class="btn btn-primary">BOOK NOW</a>
+        </div> 
+      </div>
+      <div class="card-group position-absolute section1-1">
+  
+            <!-- card-2 -->
+            <div class="card  me-5 c-ard" style="width: 19rem;">
+              <img class="c-img" src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/980e8b95d974537587262173/7min.jpg" alt="..." style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title">02/ Stonehenge</h5>
+                <!-- <p class="card-text">Stand in awe at this iconic Neolithic stone structure. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p> -->
+                <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+              </div>
+            </div>
+  
+            <!-- card-3 -->
+            <div class="card me-5 c-ard" style="width: 19rem;">
+              <img src="https://imageio.forbes.com/specials-images/dam/imageserve/1171238184/960x0.jpg?height=473&width=711&fit=bounds" class="card-img-top c-img" alt="..." style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title">03/ Bali ,Indonesia</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+              </div>
+            </div>
+            <!-- card-4 -->
+            <div class="card me-5 c-ard" style="width: 19rem;">
+              <img src="https://media.timeout.com/images/105242512/image.jpg" class="card-img-top c-img" alt="..." style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title">04/ Syndney ,Australiya</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+              </div>
+            </div>
+      </div>
+
+      <div class="card-group position-absolute section1-2 mt-4">
+  
+        <!-- card-5 -->
+        <div class="card me-5 c-ard" style="width: 19rem;">
+          <img class="c-img" src="https://static.boredpanda.com/blog/wp-content/uploads/2014/04/amazing-places-to-see-before-you-die-coverimage.jpg" alt="..." style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">05/  Bored </h5>
+            <!-- <p class="card-text">Stand in awe at this iconic Neolithic stone structure. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p> -->
+            <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+          </div>
+        </div>
+
+        <!-- card-6 -->
+        <div class="card  me-5 c-ard" style="width: 19rem;">
+          <img src="https://publish.purewow.net/wp-content/uploads/sites/2/2019/04/most-beautiful-places-in-the-world-twelve-apostles.jpeg?fit=675%2C501" class="card-img-top c-img" alt="..." style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">06/ Bali ,Indonesia</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+          </div>
+        </div>
+        <!-- card-7 -->
+        <div class="card me-5 c-ard c7" style="width: 19.1rem;">
+          <img src="https://www.usnews.com/object/image/0000016f-aff5-df6f-a5ef-bfffcc270000/7-machhu-picchu-getty.jpg?update-time=1579205184487&size=responsive640" class="card-img-top c-img" alt="..." style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">07/ Syndney ,Australiya</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+          </div>
+        </div>
+  </div>
+    </section>
+
+     <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4 text-center"><button type="button" class="btn btn-primary m-5 p-md-3 mx-auto">MORE PACKAGES</button></div>
+      <div class="col-4"></div>
+     </div>
+
+    <!-- section 2 -->
+    <div id="plan">
+        <h1 class="text-center">TRIP INTO GOD'S OWN COUNTRY</h1>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide ms-5 me-5 mt-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="1000">
+              <img  src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Alleppey.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 600px;">
+            </div>
+            <div class="carousel-item " data-bs-interval="2000">
+              <img src="https://static.toiimg.com/photo/43425856.cms" class="d-block w-100 img-fluid" alt="..." style="height: 600px;">
+            </div>
+            <div class="carousel-item " data-bs-interval="2000">
+              <img src="https://wallpaperset.com/w/full/f/d/a/92242.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 600px;">
+            </div>
+            <div class="carousel-item " data-bs-interval="2000">
+              <img src="https://keralatourism.travel/images/destinations/headers/kochi-kerala-tourism-entry-fee-timings-holidays-reviews-header.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 600px;">
+            </div>
+
+          </div>
+        </div>
+        
+
+        <div class="d-flex mt-4 mb-5 kerala">
+            <div class="video1 me-5 ms-md-5 "><iframe  src="https://www.youtube.com/embed/R83BlU5nnbs" title="Signature Video  | Kerala Tourism | Experience God's Own Country" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          
+           <div class="container me-5 mt-3 mb-3 bg-secondary bg-opacity-10 kerala-img">
+             
+              <div class="row row-cols-md-3 mt-2">
+                  <div class="col-4" >
+                    <img class="img-fluid w-100 img1" src="https://assets.thehansindia.com/h-upload/2023/04/12/1346371-kerala.webp" alt="" style="height: 150px;">
+                  </div>
+                  <div class="col-4">
+                   <img class="img-fluid w-100 img1" src="https://miro.medium.com/v2/resize:fit:1400/1*piMz2ozslTtgFCaFeN9Zkg.jpeg" alt="" style="height: 150px;">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid w-100 img1" src="https://traveltradejournal.com/wp-content/uploads/2021/09/Kerala-Munnar.jpg" alt="" style="height: 150px;">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid w-100 img1" src="https://cdn0.weddingwire.in/article/7521/3_2/960/jpg/71257-kerala-wedding-dress-weva-photography-lead.jpeg" alt="" style="height: 150px;">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid w-100 img1" src="https://www.thestatesman.com/wp-content/uploads/2022/09/Untitled-design-14.jpg" alt="" style="height: 150px;">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid w-100 img1" src="https://blog.milkbasket.com/wp-content/uploads/2022/08/1-6-1024x538.jpg" alt="" style="height: 150px;">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid w-100 img1" src="https://images.herzindagi.info/image/2022/Dec/kerala-temples.jpg" alt="" style="height: 150px;">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid w-100 img1" src="https://cdn.sanity.io/images/nlpqts3z/production/6117d84c3c6fec6f8397f8d22bc28283d7f5298b-714x402.jpg" alt="" style="height: 150px;">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid w-100 img1" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/09/Athachamayam1.jpg" alt="" style="height: 150px;">
+                  </div>
+                </div>
+           </div>
+            
+           
+
+        </div>
+    </div>
+
+    <!-- section-3 -->
+    <h2 class="text-center mb-5 ">NORTH INDIAN TOURS</h2>
+    <div class="d-flex flex-wrap ">
+        <div class="border border-info p-3 ms-md-5 me-md-4 rounded-5 m-2" style="height: fit-content;">
+          <div class=" flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img class="rounded" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/07/shutterstock_115227475.jpg" alt="" style="height: 200px; width: 180px;">
+                </div>
+                <div class="flip-box-back text-center">
+                  <h2 >Dal Lake</h2>
+                  <p>Summer Capital of J&K</p>
+                </div>
+              </div>
+          </div>
+          
+    
+        </div>
+
+      <div class="border border-info p-3 me-md-4 rounded-5 m-2" style="height: fit-content;">
+
+          <div class=" flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img class="rounded" src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1032564361_20200219140048.jpg" alt="" style="height: 200px; width: 180px;">
+              </div>
+              <div class="flip-box-back">
+                <h2>Khajuraho</h2>
+                <p> harmonious integration of sculptures </p>
+              </div>
+            </div>
+        </div>
+      </div>
+          
+
+        <div class="border border-info p-3 me-md-4 rounded-5 m-2" style="height: fit-content;">
+
+          <div class=" flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img class="rounded" src="https://www.tourmyindia.com/socialimg/north-india-tourism.jpg" alt="" style="height: 200px; width: 180px;">
+              </div>
+              <div class="flip-box-back">
+                <h2>Taj Mahal</h2>
+                <p>ivory-white marble mausoleum</p>
+              </div>
+            </div>
+        </div>
+
+          
+        </div>
+
+        <div class="border border-info p-3 me-md-4 rounded-5 m-2" style="height: fit-content;">
+
+          <div class=" flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img class="rounded" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/09/Haridwar1.jpg" alt="" style="height: 200px; width: 180px;">
+              </div>
+              <div class="flip-box-back">
+                <h2>Haridwar</h2>
+                <p>seven sacred cities of the Hindus and is a major pilgrimage centre</p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="border border-info p-3 me-md-4 rounded-5 m-2" style="height: fit-content;">
+
+          <div class=" flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img class="rounded" src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/jaisalmer-desert-camel-safari.jpg" alt="" style="height: 200px; width: 180px;">
+              </div>
+              <div class="flip-box-back">
+                <h2>Jaisalmer</h2>
+                <p>Golden City</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+       <div class="border border-info p-3 rounded-5 m-2" style="height: fit-content;">
+        
+        <div class=" flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img class="rounded" src="https://toim.b-cdn.net/pictures/tourintro/delhi-agra-jaipur-tour-1330.jpeg" alt="" style="height: 200px; width: 180px;">
+            </div>
+            <div class="flip-box-back">
+              <h2>Lotus Temple</h2>
+              <p>A place of worship for the Bahia faith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+ 
+    <hr>
+    <!-- section 4 -->
+  <h2 id="service" class="text-center  mt-5">OUR PREMIUM FEATURES</h2>
+  <p class="text-danger text-center " style="font-family: 'Dancing Script', cursive; font-size: xx-large;">we will make your dreams come true</p>
+
+  <div class="d-flex justify-content-md-center align-content-sm-around flex-wrap mb-5">
+    <div class="card text-center bg-secondary bg-opacity-10 me-3  rounded-5 mb-3 ms-3 me-md-5" style="width: 12rem;">
+      <img src="https://us.123rf.com/450wm/stockgiu/stockgiu1911/stockgiu191128259/134537131-urban-ecology-young-woman-and-man-riding-bikes-in-the-park-vector-illustration.jpg?ver=6" class="card-img-top rounded-circle mx-auto mt-2 " alt="..." style="height: 100px; width: 100px;">
+      <div class="card-body">
+        <h5 class="card-title">FREE BIKE RIDE</h5>
+        <a href="#" class="card-link" style="color: blueviolet;">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card text-center bg-secondary bg-opacity-10 ms-3 rounded-5 mb-3 me-md-5" style="width: 12rem;">
+      <img src="https://i.pinimg.com/originals/be/36/d3/be36d333a6ec650a9c0d663399b83f24.jpg" class="card-img-top rounded-circle mx-auto mt-2" alt="..." style="height: 100px; width: 100px;">
+      <div class="card-body">
+        <h5 class="card-title">CAMPFIRE </h5>
+        <a href="#" class="card-link" style="color: blueviolet;">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card text-center bg-secondary bg-opacity-10 ms-3 me-3 rounded-5 mb-3 me-md-5" style="width: 12rem;">
+      <img src="https://img.freepik.com/free-vector/flat-woman-customer-support_23-2148893542.jpg?size=338&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=ais" class="card-img-top rounded-circle mx-auto mt-2" alt="..." style="height: 100px; width: 100px;">
+      <div class="card-body">
+        <h5 class="card-title">24X7 SUPPORT</h5>
+        <a href="#" class="card-link" style="color: blueviolet;">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card text-center bg-secondary bg-opacity-10 rounded-5 ms-3 mb-3" style="width: 12rem;">
+      <img src="https://img.freepik.com/free-vector/tour-vacation-guide-illustration_1284-16528.jpg" class="card-img-top rounded-circle mx-auto mt-2" alt="..." style="height: 100px; width: 100px;">
+      <div class="card-body">
+        <h5 class="card-title">TOUR GUIDE</h5>
+        <a href="#" class="card-link" style="color: blueviolet;">Learn More</a>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- section 5 -->
+
+  <div id="respond" class="row bg-secondary bg-opacity-10 justify-content-md-center mb-5">
+    <div class="col-md-4 mt-5">
+      <div class="d-flex justify-content-center">
+        <img class="img-fluid w-80" src="https://drprem.com/travel/wp-content/uploads/sites/53/2014/07/senior-friends-on-tour.jpg" alt="..." style="height: 150px;"> 
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <p class="text-center">"We have just got back from our long holiday around India.
+        Just wanted to say how much we enjoyed our trip' how we felt so looked after and how well our driver Uday took us around. "</p>
+    </div>
+
+    <div class="col-md-4  mt-5">
+      <div class="d-flex justify-content-center">
+        <img class="img-fluid w-80" src="https://lp-cms-production.imgix.net/2022-01/Young%20woman%20traveler%20with%20backpack%20traveling%20into%20beautiful%20pagoda%20in%20Wat%20Pra%20Kaew%20Witthaya%20Prasongsin%20GettyImages-1333211288%20rfc.jpg" alt="..." style="height: 150px;">
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <p class="text-center">" A truely satisfying travel experience.travel Guide have a great coordianation for making my solo trip such a wonderful and mesmorizing one. "</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <div class="d-flex justify-content-center">
+        <img class="img-fluid w-80" src="https://i.pinimg.com/736x/fa/00/8d/fa008dd5fcc78cc40525fcc3662c5bdc.jpg" alt="..." style="height: 150px;">
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+      </div>
+      <p class=" text-center">" I must say I was delighted with the service you provided - it was just what I wanted. This is the second time I have used your services, and both times you provided a faultless experience. "</p>
+    </div>
+  </div>
+
+    <!-- Footer -->
+
+    <div class="card text-bg-dark" style="height: 300px;" >
+      <img src="https://onaircode.com/wp-content/uploads/2019/09/fixed-footer-1024x596.jpg" class="card-img opacity-30 img-fluid w-100" alt="..." style="height: 400px;">
+      <div class="card-img-overlay">
+        <div class="row" style="height: 270px;">
+         
+          <div class=" col-4 bg-secondary bg-opacity-50  text-center" style="height: 270px;">
+            <h4>ABOUT US</h4>
+            <ul class="list-unstyled">
+              <li>Our Company</li>
+              <li>Our Management</li>
+              <li>Connections</li>
+              <li>Annual Reports</li>
+              <li>our Network</li>
+            </ul>
+          </div>
+          <div id="contact" class="col
+          bg-secondary bg-opacity-50  text-center " style="height: 270px;">
+            <h4 class="mb-5-md">SOCIAL MEDIA</h4>
+            <i class="fa-brands fa-facebook bg-dark me-2 p-1 brand"></i>
+            <i class="fa-brands fa-twitter bg-dark me-2 p-1 brand"></i>
+            <i class="fa-brands fa-whatsapp bg-dark me-2 p-1 brand"></i>
+            <i class="fa-brands fa-instagram bg-dark me-2 p-1 brand"></i>
+            <i class="fa-brands fa-snapchat bg-dark me-2 p-1 brand"></i>
+          </div>
+          <div class="col bg-secondary bg-opacity-50" style="height: 270px;"></div>
+
+          <div class="col bg-secondary bg-opacity-50  text-center" style="height: 270px;">
+            <div class="d-flex justify-content-center"><img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1541048162979-c9ca04d625d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dGhhaWxhbmR8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" style="height: 100px; width:100px"></div>
+            <h2 class="text-center">Explore the World with us</h2>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+</body>
+
+<!-- Bootstrap script link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>

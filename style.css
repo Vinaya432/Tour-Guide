@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.page-header>h1{
+    top: 80px;
+    left: 30px;
+}
+
+
+.nav-dis{
+    top:500px;
+    left: 50%;
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+
+
+.nav-dis1{
+  
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.section1-1{
+    top:12%;
+    left:22%;
+}
+
+.enq{
+    bottom:300px;
+    left: 50%;
+}
+
+.section1-2{
+    top:50%;
+    left:22%
+}
+
+iframe{
+    width: 800px;
+    height: 500px;
+}
+
+.checked{
+     color: green;
+}
+
+.brand{
+    font-size: 30px;
+    color: white;
+}
+
+.brand:hover{
+    color: black;
+    animation: shake 0.5s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(20deg);
+    }
+    20%{
+        transform: rotate(-20deg);
+    }
+    30%{
+        transform: rotate(20deg);
+    }
+    40%{
+        transform: rotate(-20deg);
+    }
+
+}
+
+.flip-box {
+    border: 2px solid red;
+    background-color: transparent;
+    width: 180px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    transition: transform .3s;
+    transform-style: preserve-3d;
+  }
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  } 
+
+  .flip-box-back {
+    top:50px;
+    background-color:#555;
+    color: rgb(219, 21, 21);
+    transform: rotateY(180deg);
+  }
+
+@media  screen and (max-width: 768px) {
+
+    .nav-dis{
+        font-size:30px;
+    }
+    .enq{
+        bottom: 50px;
+
+    }
+
+    .section1-1,.section1-2{
+        visibility: hidden;
+    }
+
+    .c-ard1{
+        left:22%;
+    }
+
+   /* .section-1{
+    height: 1700px;
+   }
+
+   .section1-1{
+    top: 80px;
+    left: 48%;
+   }
+
+   .c7{
+    top: -500px;
+    left: 89%;
+   }
+
+   .section1-2{
+    top:56%;
+    left: 0;
+    /* left: 9.7%; */
+   /* } */
+   /* .c-ard1{
+    max-width: 12rem;
+   }
+    .c-ard{
+        max-width: 12rem; */
+        /* display: inline-block; */
+   /* } */
+} 
+
+@media screen and (max-width: 768px){
+    .kerala{
+        display: flex;
+        flex-direction: column;
+    }
+    iframe{
+        margin:50px auto;
+        max-width: 400px;
+        max-height: 200px;
+        
+    }
+
+    .kerala-img{
+        max-width: 430px;
+        /* max-height: 400px; */
+    }
+
+    .img1{
+        height: 100px;
+    }
+    
+    
+}
+
