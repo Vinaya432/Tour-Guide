@@ -8,6 +8,10 @@
     left: 30px;
 }
 
+.page-header>img{
+    width: 100%;
+}
+
 
 .nav-dis{
     top:500px;
@@ -113,6 +117,9 @@ iframe{
 
 @media  screen and (max-width: 768px) {
 
+    .section-1{
+        left: 0;
+    }
     .nav-dis{
         font-size:30px;
     }
@@ -126,7 +133,7 @@ iframe{
     }
 
     .c-ard1{
-        left:22%;
+        left:16%;
     }
 
    /* .section-1{
